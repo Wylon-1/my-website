@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的网页</title>
+    <style>
+        body {
+            background: #fb3600bb;
+            font-family: "Microsoft YaHei", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #620ceb;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #620ceb;
+            font-size: 35px;
+        }
+        .btn {
+            background: #7228cd;
+            color: rgb(255, 255, 255);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #6e90ac;
+            transform: scale(1.05);
+        }
+   .product-show {
+    display: flex;           /* 开启横向排列 */
+    justify-content: center; /* 整体居中 */
+    gap: 20px;              /* 图片之间的间距 */
+    margin: 30px 0;         /* 上下留白 */
+    flex-wrap: wrap;        /* 如果屏幕太小，自动换行 */
+}
+
+.product-show img {
+    width: 30%;             /* 每张图占容器宽度的30%，3张刚好一排 */
+    border-radius: 8px;     /* 图片圆角 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* 阴影，更立体 */
+    transition: 0.3s;       /* 动画过渡 */
+}
+
+.product-show img:hover {
+    transform: scale(1.05); /* 鼠标放上去微微放大 */
+}
+   </style>
+</head>
+<body>
+    <img src="photo1.png" alt="我的头像" style="border-radius: 70%; width: 250px; height: 130px; object-fit: cover;">
+    <h1>德瑞伯2800度超高温石墨化炉</h1>
+    <p>高品质石墨化炉，助力您的生产</p>
+<div class="product-show">
+    <img src="photo.jpg" alt="产品图1">
+    <img src="photo2.jpg" alt="产品图2">
+    <img src="photo3.jpg" alt="产品图3">
+</div>
+    <button class="btn" onclick="alert('联系方式15620242726')">联系方式</button>
+</body>
+</html>
